@@ -1,0 +1,51 @@
+body {
+    background-color: #dadada;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.accent {
+    color: #008f6b !important;
+}
+
+.btn-custom {
+    transition: transform 1s;
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.btn-custom:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeInAndDrop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-custom:nth-child(1) {
+    animation: fadeInAndDrop 1s ease-out 0.5s forwards;
+}
+
+.btn-custom:nth-child(2) {
+    animation: fadeInAndDrop 1s ease-out 1s forwards;
+}
+
+.gradient-text {
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(114, 90, 255), rgb(208, 90, 255), rgb(255, 79, 103), rgb(255, 39, 39), rgb(255, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+#start:hover {
+    transform: scale(1.25);
+}
